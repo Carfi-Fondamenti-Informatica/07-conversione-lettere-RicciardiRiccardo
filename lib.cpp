@@ -1,20 +1,22 @@
 #include "lib.h"
 
-bool funzione (char carattere) {
-    if ((((char)97<=carattere) and (carattere<=(char)122)) or (((char)65<=carattere) and (carattere<=(char)90))){
-        return true;
-    }
-    else {
-        return false;
-    }
-}
+bool conversione(char &c) {
 
-char conversione (char carattere){
-    if (('a'<=carattere) and (carattere<='z')) {
-        carattere-=(char)32;
+    if ((c >= 0) && (c <= 9)) {
+        return false;
+
     }
-    else {
-        carattere+=(char)32;
-    }
-    return carattere;
+    else
+    {
+
+       if(c>= 'A' && c <= 'Z'){
+            c= c + 32;
+            return true;
+
+        }
+        else if((c>='a')&&(c<='z')){
+            c=c-32;
+            return true;
+        }
+    } 
 }
