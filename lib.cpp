@@ -11,10 +11,10 @@ bool funzione (char carattere) {
 
 char conversione (char carattere){
     if (('a' <= carattere) and (carattere <= 'z')) {
-        carattere -= (char)32;
+        carattere-=(char)32;
     }
     else {
-        carattere += (char)32;
+        carattere+=(char)32;
     }
     return carattere;
 }
