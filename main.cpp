@@ -1,17 +1,28 @@
 #include <iostream>
-#include "lib.h"
 using namespace std;
+#include "lib.h"
 
-int main(){
-    char carattere;
-    cin >> carattere;
 
-    if (funzione(carattere) == true){
-        cout << conversione(carattere);
-    }
-    else cout << "errore";
-}#include <iostream>
 
-int main(){
-  return 0;
+
+
+
+int main() {
+    char a;
+    bool t;
+cin>>a;
+
+t= conversione(a);
+if(t== true){
+    cout<<a<<endl;
+}
+else{
+    cout<<"errore"<<endl;
+}
+
+
+
+
+
+    return 0;
 }
